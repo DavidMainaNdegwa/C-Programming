@@ -1,0 +1,18 @@
+Foward slashes,//,followed by text to make our program easier to understand for everyone.
+
+Prevent executing code using comments
+- it is common practise to cooment code so that it can be ignored rather than removing them completely.
+eg; // double number = 32;
+
+// printf("%lf", number);
+
+Multiline comments in C
+eg;
+/* This program takes input from user,
+it stores it in the age variable and,
+print the value using printf()  */
+
+Why are comments important?
+-Helps one to understand one's own code months after programming
+-Helps a client to customize new features
+-Saves time during programming
