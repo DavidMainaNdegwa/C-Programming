@@ -1,3 +1,6 @@
+break terminates the loop
+continue skips the loop
+
 PROJECT
 Can you write a program that takes an input from the user 
 and prints it if the value is a negative odd number
@@ -18,7 +21,7 @@ int main() {
   
      if(number > 0){
           printf("The value is a positive value");
-          break;
+          break; //break is used inside a loop hence while loop
       }
       
      if((-number%2) == 0){
