@@ -5,6 +5,8 @@ float (4 bytes) | %f for printing | prints decimal numbers only
 char (1 byte) | %c for printing | prints alphabets only
 /*
 
+Example;
+
 INT
 int age = 10;
 printf("Age:%d",age);
