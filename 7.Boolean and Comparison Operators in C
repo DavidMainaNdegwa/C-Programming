@@ -1,0 +1,48 @@
+Boolean Variable
+
+Format Specifier (%d) used to print Boolean
+1 means false
+0 means True
+
+#include <stdio.h>
+#include <stdbool.h>
+
+int main(){
+
+bool value1 = true;
+bool value = false;
+// t instead of T and f instead of F because T and t have a different meaning
+
+printf("%d ", value1);
+printf(" %d", value2);
+return 0;
+}
+
+OUTPUT
+1  0
+
+COMPARISON OPERATORS
+== Equal to
+!= Not equal to
+> Greater than
+< Lesser than
+>= Greater than or equal to
+<= Less than or equal to
+|| OR //either or: returns the value true(1) if both the values are true
+&& AND //Returns the value true(1) if both the values are true
+! NOT // Reverse the result if the result is true(1) it reverse it into false(0)
+
+eg: 
+int main(){
+
+int age = 16;
+
+bool result = !(age >= 18);
+
+printf("%d",result);
+
+return 0;
+}
+
+OUTPUT
+1
