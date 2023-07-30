@@ -1,0 +1,15 @@
+ASCII VALUE
+A - Z = 65-90
+a - z = 97 - 122
+0 - 9 = 48 - 57
+Special Char - 0 - 47, 18 - 64, 91 - 96
+
+// A - Z, a - z are char data type variables
+// 0 - 9 are int data type variables
+// Special characters include all printable characters that are neither letters nor numbers.
+
+PROJECT
+What is the result in the following statement?
+
+int result = '8' + 12;
+= 68
