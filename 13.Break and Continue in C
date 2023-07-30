@@ -1,0 +1,8 @@
+PROJECT
+Can you write a program that takes an input from the user 
+and prints it if the value is a negative odd number
+
+if the input is positive,end the loop with message,Positive value
+if the input is negative even,end the loop with message,Negative Even
+
+
