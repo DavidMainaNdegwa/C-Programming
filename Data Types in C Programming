@@ -32,3 +32,18 @@ printf("Age: %c", age);
 
 OUTPUT
 Age:Twenty
+
+SIZEOF()OPERATOR
+int age;
+double number;
+
+printf("int size = %zu", sizeof(age));
+//to print the int number of bytes
+
+printf("double number = %zu", sizeof(number));
+//to print the double number of bytes
+
+OUTPUT
+int size = 4
+double number = 8
+
