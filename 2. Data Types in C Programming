@@ -1,4 +1,3 @@
-// Online C compiler to run C program online
 /*
 int (4 bytes) | %d for printing | prints number variables only
 double (8 bytes) | %lf for printing | prints decimal numbers only
