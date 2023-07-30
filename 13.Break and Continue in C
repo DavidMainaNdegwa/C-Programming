@@ -5,4 +5,28 @@ and prints it if the value is a negative odd number
 if the input is positive,end the loop with message,Positive value
 if the input is negative even,end the loop with message,Negative Even
 
+OUTPUT
+#include <stdio.h>
+
+int main() {
+    
+    while(1){
+        
+    int number;
+    printf("Enter the number:");
+    scanf("%d", &number);
+  
+     if(number > 0){
+          printf("The value is a positive value");
+          break;
+      }
+      
+     if((-number%2) == 0){
+          printf("The value is a negative even");
+          break;
+      }
+      
+}      
+  return 0;    
+  }
 
