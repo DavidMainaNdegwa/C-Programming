@@ -1,0 +1,16 @@
+# include <stdio.h>
+
+int main() {
+
+int age = 25;
+// declare variable a number
+
+printf("Age: %d",age);
+// print the variable
+
+return 0;
+}
+//close the code with return 0 followed by }
+
+OUTPUT
+Age: 25
