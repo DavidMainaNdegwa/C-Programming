@@ -1,0 +1,39 @@
+SYNTAX
+
+test condition? expression1 : expression2;
+
+EXAMPLE
+
+#include <stdio.h>
+
+int main() {
+
+int age = 15;
+
+(age >= 18) ? printf("You can vote") : printf("You cannot vote");
+
+return 0;
+}
+
+OUTPUT
+
+You cannot vote
+
+PROJECT 
+
+Use a ternary operator to check if th enumber is odd or even
+If the number is odd,print"The number is Odd"
+If number is even,printf"The number is even"
+
+#include <stdio.h>
+
+int main() {
+    int number;
+    
+    printf("Enter a number:");
+    scanf("%d", &number);
+    
+    (number%2 == 0) ? printf("The number is even") : printf("The number is odd");
+
+    return 0;
+}
