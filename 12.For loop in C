@@ -1,0 +1,11 @@
+SYNTAX
+
+for(int i = 0; testExpression; updateExpression) {
+//code inside the for loop
+}
+
+PROJECT
+Can you use the for loop to compute the sum of only odd numbers from 1 to 100?
+
+in each interaction,you will need to add an odd number to the sum.
+
