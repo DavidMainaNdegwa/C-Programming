@@ -1,6 +1,8 @@
+// Online C compiler to run C program online
 # include <stdio.h>
 
 int main() {
+// Write C code here
 
 int age = 25;
 // declare variable a number
@@ -10,7 +12,7 @@ printf("Age: %d",age);
 
 return 0;
 }
-//close the code with return 0 followed by }
+//close the code with return 0; followed by }
 
 OUTPUT
 Age: 25
