@@ -1,0 +1,17 @@
+#inlude <stdio.h>
+
+int main(){
+
+int age;
+//int to store input data
+
+scanf("%d", &age);
+//format speficier to specify which type of input data and ampersand(&) before the variable name which represents the memory address
+
+printf("Age: %d", age);
+
+OUTPUT
+22
+//a random number entered by the user
+
+Age:22
