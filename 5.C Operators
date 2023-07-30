@@ -1,0 +1,10 @@
+// Addition +
+// Subraction -
+// Multiplication *
+// Division /
+// Remainder %
+// Increment ++ | increases a value by one
+// Decrement -- | decreases a value by one
+
+Incase of multiple operators,use B0DMAS when declaring a variable.
+eg; int x = (4/2) + (6/5) - 1;
