@@ -1,0 +1,113 @@
+#include <stdio.h>
+//stdio.h is a header file
+
+int main() {
+printf("Hello world");
+//printf is a standard library function.
+
+return 0;
+}
+
+A standard library function is already predefined in a file
+
+TYPES OF HEADER FILES
+1.Math header file <math.h>
+<math.h>
+//Helps us to perform mathematical operations easily
+
+eg: square root where we use sqrt(25);
+
+a)Cuberoot
+cbrt(varibale)
+eg:
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+
+int num = 27;
+printf("Cube root %lf ,cbrt(num));
+
+return 0;
+}
+
+OUTPUT
+3.000000
+
+b)Power
+pow(variable)
+eg:
+#inlcude <stdio.h>
+#include <math.h>
+
+int main() {
+
+int a = 5;
+int b = 2;
+//5 power 2,5 power 3...
+
+double result = pow(a,b);
+printf(Power: %lf", result);
+
+return 0;
+}
+
+OUTPUT
+Power: 25.000000
+
+2.Ctype Header File
+#include <ctype.h>
+
+eg:
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+
+char alpha = 'e';
+char upper = toupper(alpha);
+printf(%c",upper);
+
+char lower = tolower(alpha);
+printf("%c",lower);
+
+return 0;
+
+OUPUT
+E
+e
+
+PROJECT
+Create a program that computes the result of a 
+number raised to the power of the square root
+of a number
+
+1.Take input from user
+2Compute the square root of a number using sqrt()
+3.Compute the power of the number raised to the power of its sqaure root
+4.Print the result
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    
+    int number;
+    printf("Enter a number:");
+    scanf("%d", &number);
+    
+    double num = sqrt(number);
+    printf("\nSquareroot:%lf",num);
+    
+    int b = 3;
+    double value = pow(num,b);
+    printf("\nPower:%lf",value);
+
+    return 0;
+}
+
+OUTPUT
+Enter a number:4
+Squareroot:2.000000
+Power:8.000000
+
