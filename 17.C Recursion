@@ -1,0 +1,56 @@
+Recursion is a process that allows us to create a function that call itself
+
+SYNTAX
+void recurse () {
+...
+if(condition) {
+...
+}
+else {
+recurse();
+}
+...
+}
+int main() {
+...
+recurse();
+...
+return  0;
+
+PROJECT
+Create a program that computes the factorial of a number.
+
+1.Take input from user
+2.Pass the input value to a function
+3.Inside the function check if the number is greater than 0
+4.If true,check the number multiplied by a recursive call 
+to the function parameter 1 less than number.
+
+otherwise,return 1.
+
+#include <stdio.h>
+ int multiply(int n);
+ 
+int main() {
+    
+    int number,result;
+    
+    printf("Enter number input:");
+    scanf("%d", &number);
+    
+    result = sum(number);
+    printf("Sum:%d",result);
+    
+    return 0;
+    
+}
+
+int multiply(int n){
+    if(n != 0){
+        //multiply()function calls itself
+        return n * multiply(n - 1);
+    }
+    else{
+        return 1;
+    }
+}
