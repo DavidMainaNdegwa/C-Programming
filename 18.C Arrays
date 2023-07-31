@@ -1,0 +1,69 @@
+SYNTAX
+datatype arrayname[array size];
+
+eg:
+
+int age[5] = {21,29,25,32,17};
+printf("%d",age[0]);
+
+OUTPUT
+21
+
+Using for loop when printing arrays
+#include <stdio.h>
+
+int main() {
+
+int age[5];
+
+for(int i =0;i < 5;i++){
+scanf("%d", &age[i]);
+}
+
+for(int i = 0;i < 5;i++){
+printf("%d ",age[i]);
+}
+
+OUTPUT
+21
+29
+25
+32
+17
+
+21 29 25 32 17
+
+PROJECT 
+Create a program that computes the average marks of a student
+
+1.Create an array that stores the marks of 5 subjects
+2.Computes the total marks by adding all the marks
+3.Divide the total marks by the total subjects
+4.Print the average marks
+
+#include <stdio.h>
+
+int main() {
+    
+    int number[5];
+    
+    printf("Write down 5 numbers:\n");
+
+    for(int i = 0;i < 5;i++){
+        scanf("%d", &number[i]);
+    }
+    int avg = ((number[0] + number[1] + number[2] + number[3] + number[4]) / 5);
+    
+    printf("Result = %d",avg);
+    
+    return 0;
+}
+
+OUTPUT
+Write down 5 numbers:
+12
+23
+34
+45
+56
+Result = 34
