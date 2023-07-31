@@ -1,0 +1,43 @@
+TWO TYPES OF VARIABLERS
+local and Global variable scope
+
+Local variable is a scope which cannot work outside the function scope which is declared to.
+
+EXAMPLE:
+#include <stdio.h>
+
+int addNumbers(int number1,int number2){
+int sum = number1 + number2;
+//variable sum is a local variable as it cannot be declared out of the function scope.
+return sum;
+}
+
+int main() {
+int result = addNumers(8,9);
+printf("%d",result);
+}
+
+return 0;
+
+Global variables are variables which are declared outside the function.
+
+EXAMPLE:
+
+#include <stdio.h>
+
+int result;
+//result variable is a global variable
+
+void addNumbers("int number1,int number2){
+result = number1 + number2;
+printf("Result = %d",result);
+
+int main() {
+
+addNumbers(8,9);
+
+return 0;
+}
+
+OUTPUT
+Result = 17
