@@ -1,0 +1,131 @@
+- Helps us to work directly with computer memory
+- Whenever we declare a variable a space is located in the computer 
+memory for the variable.
+- We use ampersand(&) symbol and the variable name to access the memory address
+
+eg:
+
+#include <stdio.h>
+
+int main() {
+
+int age =25;
+
+printf("%p", age);
+//%p to print the address
+
+scanf("%d", age);
+
+return 0;
+
+OUTPUT
+
+0x7ffd75199894
+
+2.POINTER VARIABLES
+#include <stdio.h>
+
+int main() {
+
+int age = 25;
+
+printf("%p", age);
+
+int* ptr = &age;
+
+printf("\n %p", ptr);
+
+return 0;
+
+OUTPUT
+0x7ffd75199894
+0x7ffd75199894
+
+3.ACCESS A VALUE THROUGH POINTER 
+#include <stdio.h>
+
+int main() {
+
+int age = 25;
+
+int* ptr = &age;
+
+printf("Address: %p\n", ptr);
+//ptr is a pointer that stores the memory address
+
+printf("Value: %d", *ptr);
+//astrix ptr gives the value stored in the memory address
+return 0;
+}
+
+OUTPUT
+Address:0x7ffd75199894
+Value:25
+
+4.CHANGE THE VALUE USING POINTER
+#include <stdio.h>
+
+int main() {
+
+int age = 25;
+
+int* ptr = &age;
+
+*ptr = 31;
+
+printf("%d", age);
+
+return 0;
+}
+
+OUTPUT
+31
+
+SYNTAX
+COMMON MISTAKES
+eg:
+int* ptr;
+
+int *ptr;
+
+//avoid the first one because this syntax sometimes creates 
+a lot of confusion.
+
+Ptr = number; //invalid
+
+*ptr = &number; //invalid
+
+ptr = &number; //invalid
+
+*ptr = number; //valid
+
+PROJECT
+Create a program to change the value of a variable using a pointer.
+
+-Get the value for a double variable salary
+-Assign the address of salary to a double pointer
+
+Now use the pointer to;
+-Print the value of salary.
+-Increase the salary by 2 times.
+-Print the new salary.
+#include <stdio.h>
+
+int main() {
+   double salary;
+   
+  printf("Enter the salary:");
+  scanf("%lf",&salary);
+   
+   double* newSalary = &salary ;
+   
+   * newSalary = * newSalary * 2;
+   
+   printf("New Salary:%lf",* newSalary);
+
+    return 0;
+}
+
+OUTPUT
+Enter the salary:300
+New Salary:600.000000
