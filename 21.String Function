@@ -1,0 +1,129 @@
+1.strlen()Function
+styling function or sting function which shows the length of a string.
+
+eg:
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+
+char language[] = " C programming";
+
+printf("%s", language);
+
+printf("Lenghth: %zu", strlen(language));
+
+return 0;
+}
+
+OUTPUT
+C programming
+Length:13
+
+2.Strcpy()Function
+-It is used to copy one function to another.
+eg:
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+
+char food[] = "Pizza";
+
+char bestFood[strlen(food)];
+
+printf("%s",bestfood);
+
+return 0;
+}
+
+OUTPUT
+Pizza
+
+3.strcat()function
+-Use to join two strings together
+eg:
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+
+char text1[] = "Hey, ";
+char text2[] = "How are you";
+
+strcat(text1, text2);
+
+printf("%s", text1);
+
+return 0;
+
+OUTPUT
+Hey, How are you
+
+4.Strcmp()Function
+-Used to compare two strings and the function returns 0 if 
+the stings are equal but returns a non zero value if the
+strings are not equal.
+
+eg:
+
+#include <stdio.h>
+#include <string.h>
+
+#int main() {
+
+char text1[] = "abcd";
+char text2[] = "abcd";
+
+int result = strcmp(text1, text2);
+
+printf("%d", result);
+
+return 0;
+
+OUTPUT
+0
+
+PROJECT
+-Create a program to compare two strings that and print the larger strings.
+
+-Get two strings from the user using fgets()
+
+-Compare the length of both the strings using strlen()
+
+-Print the larger string
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+
+char name1[20];    
+
+char name2[20];
+
+printf("Enter the name1:");
+fgets(name1, sizeof(name1), stdin);
+
+printf("\nEnter the name2:");
+fgets(name2, sizeof(name2), stdin);
+
+if(strlen(name1) > strlen(name2)) {
+    printf("Length:%zu",strlen(name1));
+}
+
+else if(strlen(name2) > strlen(name1)) {
+    printf("Length:%zu",strlen(name2));
+}
+
+return 0;
+
+}
+
+OUTPUT
+Enter the name1:David Maina
+Enter the name2:William Mackington
+Length:19
+
+
