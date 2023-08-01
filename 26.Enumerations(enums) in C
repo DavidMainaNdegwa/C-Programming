@@ -1,0 +1,24 @@
+PROJECT
+Create an enum with constantd Sunday,Monday,Tuesday,Wednesday
+Thursday,Friday and Saturday.
+
+#include <stdio.h>
+
+enum size {
+    Sunday,
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+}weekEnd1,weekEnd2;
+
+int main() {
+  weekEnd1 = Sunday;
+  weekEnd2 = Saturday;
+    
+   printf("%d \n%d", weekEnd1, weekEnd2); 
+    
+    return 0;
+}
