@@ -1,0 +1,135 @@
+# include <stdio.h>
+
+int main() {
+
+void findValue (int* num) {
+
+*num = 39;
+
+int main() {
+
+int number = 21;
+
+findValue = 21;
+
+findValue(&number);
+
+printf("Number : %d", number):
+
+return 0;
+}
+
+OUTPUT
+Number: 39
+//When we pass the address of a  number variable 
+the pointer varaible is assigned with the address
+of the number so when we change the value of the number
+at the memory address the value of the number is also 
+changed
+
+1.FIND THE SQUARE OF A NUMBER
+void findSquare (int* number) {
+
+int square = * number * *number;
+}
+
+int main() {
+
+int number = 21;
+
+findSquare(&number);
+
+printf("Square is %d", number);
+
+return 0;
+}
+
+OUTPUT
+Square is 441
+
+2.RETURN POINTERS FROM A FUNCTION
+#include <stdio.h>
+
+int* findSquare (int* number) {
+
+int square = *number * * number;
+*number = square;
+
+return number;
+}
+
+int main() {
+
+int number = 21;
+
+int* result = findSquare(number);
+
+printf("Result is %d", * result):
+
+return 0;
+}
+
+OUTPUT
+Result is 441
+
+3.ADD TWO NUMBERS
+#include <stdio.h>
+
+int* addNumbers(int* num1,int* num2,int* sum) {
+
+*sum = *num1 + *num2;
+
+return sum;
+
+}
+int main() {
+
+int number1 = 32;
+int number = 21;
+int sum;
+
+int result = addNumbers(&number1,&number2,&sum):
+
+printf("Sum is %d,*result);
+
+return 0;
+} 
+
+OUTPUT
+Sum is 50
+
+PROJECT
+Create a program to find the multiplication of two numbers 
+using a function and pointers
+-Create a function that accepts three pointers
+-Inside the function mulitply values of two pointers
+and assign the result to the address of the third pointer
+-Call the function with addresses of the 3 variables 
+as arguments
+-Store the returned value inside a pointer and print
+the value pointed by the returned address.
+#include <stdio.h>
+
+int* timesNumbers(int* num1,int* num2,int* times) {
+     
+    *times = *num1 * *num2;
+    
+    return times;
+}
+
+int main() {
+  
+  int number1 = 32;
+  int number2 = 2;
+  int times;
+  
+  int* result = timesNumbers(&number1,&number2,&times);
+  
+  
+  printf("Result is %d", *result);
+  
+    return 0;
+}
+
+OUTPUT
+Result is 64
