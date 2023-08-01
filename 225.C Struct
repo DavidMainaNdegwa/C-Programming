@@ -1,0 +1,34 @@
+PROJECT
+
+Create a program to find the differences 
+between three complex numbers.
+
+-Perform the subtraction between complex 
+numbers by subtracting the real aprt of one 
+complex number from other complex numbers and 
+same for the imaginary part too.
+
+PROJECT
+#include <stdio.h>
+typedef struct Complex {
+    double real;
+    double imagine;
+}complex;
+
+int main() { 
+
+  complex c1 = {.real = 21.87,.imagine = 112.84};
+  complex c2 = {.real = 13.34,.imagine = 30};
+  
+    complex difference;
+    
+ difference.real =c1.real - c2.real;
+ difference.imagine = c1.imagine - c2.imagine;
+  
+  printf("Result is %.2lf - %.2lf",difference.real, difference.imagine);
+   
+   return 0;
+}
+
+OUTPUT
+Result is 8.53 - 82.84
