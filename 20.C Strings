@@ -1,0 +1,25 @@
+PROJECT 
+Create a program that takes your full name as input and prints your name.
+Then,changes the first letter of your name to X.
+
+if your name is David Maina,it will become Xavid Maina
+
+#include <stdio.h>
+
+int main() {
+  char fullName[20];
+  
+  printf("Enter your name:");
+ 
+ fgets(fullName ,sizeof(fullName), stdin);
+ 
+ fullName[0] = 'X';
+ 
+ printf("%s",fullName);
+  
+    return 0;
+}
+
+OUTPUT
+Enter your name:David Maina
+Xavid Maina
