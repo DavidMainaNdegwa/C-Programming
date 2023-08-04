@@ -1,0 +1,21 @@
+-Able to read content from the file
+-Write content from the file
+-Write content to the file
+
+in C there usually 3 steps when working with files
+1.Open a file
+2.Perform file operation
+3.Close a file
+
+OPEN A FILE
+FILE* ptr; //To work with the file
+
+fptr = fopen("test.txt", "r");
+//basically opening a file is nothing but connnceting our c program
+to the external file,in this case we are connecting our main.c file to
+test.txt file.
+
+// "r" indicates that we are opening the file in read mode
+so we can only operate the read operartion on the file.
+
+-reads files
