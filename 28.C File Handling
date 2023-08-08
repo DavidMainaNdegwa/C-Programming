@@ -18,4 +18,94 @@ test.txt file.
 // "r" indicates that we are opening the file in read mode
 so we can only operate the read operartion on the file.
 
--reads files
+READ FILE
+
+int main() {
+FILE* fptr;
+
+fptr = fopen("text.txt","r");
+//fptr is a pointer that is used to read the file.fgets read the content of the file and stores it in the content array.
+//"r" to read the file.
+char content[1000];
+
+if(fptr != NULL) {
+fgets(content,1000,fptr);
+/*fgets reads the content of the file amnd stores it in
+the content area and the thousand is the size of file
+that is to be stored*/
+
+printf("%s",content);
+}
+else{
+printf("File Open Unscuccessful");
+}
+
+fclose(fptr);
+return 0;
+}
+
+OUTPUT
+This is a text file
+//This is the first sentence we are able to get because
+fgets can only read the first sentence at a time.
+
+//if we want to read all the lines,we can use a loop.
+while(fgets(content,1000,fptr)){
+printf("%s",content);
+}
+
+fclose(fptr);
+return 0;
+//When we want to close the file.
+
+WRITE CONTENT TO THE FILE
+1.We need to open the file.
+2."w" was the second parameter instead of r with the fopen function.fptr = fopen("newfile.txt","w");
+fputs("I love C Programming",fptr);
+fputs("C Programming series is the best",fptr);
+
+PORJECT
+Create a new file in write mood
+
+Write Content
+-C is a fun programming language.
+-And,i love using c language.
+
+Close the file 
+
+Again open the file in read mode and read the content of the file.
+# include <stdio.h>
+
+int main() {
+  FILE* fptr;
+
+  fptr = fopen("newFile.txt","w");
+
+fputs("C is  a fun programming language\n",fptr);
+fputs("And,i love using C langauge",fptr);
+
+
+fclose(fptr);
+
+  return 0;
+}
+
+READ THE CONTENT OF THE FILE
+int main() {
+  FILE* fptr;
+
+  fptr = fopen("newFile.txt","r");
+
+char content[1000];
+
+if(fptr != NULL) {
+  while(fgets(content,1000,fptr)){
+    printf("%s",content);
+  }
+}
+
+
+fclose(fptr);
+
+  return 0;
+}
