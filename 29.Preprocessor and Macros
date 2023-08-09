@@ -1,0 +1,96 @@
+-Today we will know the true meaning of #include <stdio.h>
+-A Preprocessor preprocess our program before it is complied.
+
+1.#include preprocessor
+-Used to include external header file in our program
+-printf() 
+-scanf()
+2.#include math.h
+-includes the math.h file in our program.
+sqrt(),cbrt()
+eg;
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+
+int number = 125;
+double cubeRoot = cbrt(number);
+printf("%.2lf",cuberoot);
+
+return 0;
+
+OUTPUT
+5
+
+2.#define Preprocessor
+is used to define macros
+eg;#define PI 3.1415
+PI is a macro.A macro is a piece of code which is given a name hence we can define a complete function as a macro.
+#include <stido.h>
+
+#define PI 3.1415
+
+ int main() {
+
+ printf("%.4lf", PI);
+
+ return 0;
+
+ OUTPUT
+ 3.1415
+
+ 3.Define Function Macros
+ -A macro is a piece of code which is given a name hence we can define a complete function as a macro.
+ eg;
+ #include <stdio.h>
+
+ #define PI 3.1415;
+ #define circleArea(r) (PI * r * r)
+//this is the macro function,it takes the single parameter r that is the radius of the circle and computes the area
+ int main() {
+
+ double radius = 12.4;
+
+ double area = circleArea(radius);
+
+ printf("%.2lf",area);
+
+ return 0;
+}
+ OUTPUT
+ 348.04
+
+ PROJECT
+ Create a program to find the square root 
+ of a number using the sqrt()funtion and 
+ macro together.
+
+ -Include the math.h header file
+ -Define a macro function squareRoot(n)
+ -Inside a main function,use the 
+ SquareRoot()macro to compute the 
+ square root.
+ 
+OUTPUT
+#include <stdio.h>
+#include <math.h>
+
+#define SquareRoot(n) sqrt(n)
+
+int main() {
+    double number;
+    
+    printf("Enter a number: ");
+    scanf("%lf", &number);
+    
+    double result = SquareRoot(number);
+    
+    printf("Square root of %.2lf is %.2lf\n", number, result);
+    
+    return 0;
+}
+/*we use the SquareRoot(n) macro to calculate the square root 
+of the entered number and store the result in the result variable. 
+Finally, we print the original number and its square root using printf().*/
+ 
