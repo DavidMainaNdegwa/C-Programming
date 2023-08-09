@@ -50,8 +50,10 @@ This is a text file
 fgets can only read the first sentence at a time.
 
 //if we want to read all the lines,we can use a loop.
+if(fptr != NULL) {
 while(fgets(content,1000,fptr)){
 printf("%s",content);
+ }
 }
 
 fclose(fptr);
