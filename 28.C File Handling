@@ -7,7 +7,7 @@ in C there usually 3 steps when working with files
 2.Perform file operation
 3.Close a file
 
-OPEN A FILE
+1.OPEN A FILE
 FILE* ptr; //To work with the file
 
 fptr = fopen("test.txt", "r");
@@ -18,7 +18,7 @@ test.txt file.
 // "r" indicates that we are opening the file in read mode
 so we can only operate the read operartion on the file.
 
-READ FILE
+2.READ FILE
 
 int main() {
 FILE* fptr;
@@ -58,13 +58,13 @@ fclose(fptr);
 return 0;
 //When we want to close the file.
 
-WRITE CONTENT TO THE FILE
+3.WRITE CONTENT TO THE FILE
 1.We need to open the file.
 2."w" was the second parameter instead of r with the fopen function.fptr = fopen("newfile.txt","w");
 fputs("I love C Programming",fptr);
 fputs("C Programming series is the best",fptr);
 
-PORJECT
+PROJECT
 Create a new file in write mood
 
 Write Content
